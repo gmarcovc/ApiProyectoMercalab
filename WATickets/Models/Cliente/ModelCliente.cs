@@ -26,9 +26,10 @@ namespace WATickets.Models.Cliente
         public virtual DbSet<PeriodoPagos> PeriodoPagos { get; set; }
 
         public virtual DbSet<Parametros> Parametros { get; set; }
+        public virtual DbSet<Planillas> Planillas { get; set; }
+        public virtual DbSet<Horarios> Horarios { get; set; }
 
-
-
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
