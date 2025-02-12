@@ -250,8 +250,11 @@
     </Compile>
     <Compile Include="Models\APIS\ReporteClientes.cs" />
     <Compile Include="Models\Cliente\BitacoraErrores.cs" />
+    <Compile Include="Models\Cliente\Horarios.cs" />
     <Compile Include="Models\Cliente\ModelCliente.cs" />
     <Compile Include="Models\Cliente\Parametros.cs" />
+    <Compile Include="Models\Cliente\PeriodoPagos.cs" />
+    <Compile Include="Models\Cliente\Planillas.cs" />
     <Compile Include="Models\Cliente\Roles.cs" />
     <Compile Include="Models\Cliente\SeguridadModulos.cs" />
     <Compile Include="Models\Cliente\SeguridadRolesModulos.cs" />
