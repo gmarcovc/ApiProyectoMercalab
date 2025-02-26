@@ -28,8 +28,14 @@ namespace WATickets.Models.Cliente
         public virtual DbSet<Parametros> Parametros { get; set; }
         public virtual DbSet<Planillas> Planillas { get; set; }
         public virtual DbSet<Horarios> Horarios { get; set; }
-
-        
+        public virtual DbSet<OtrasDeducciones> OtrasDeducciones { get; set; }
+        public virtual DbSet<OtrosIngresos> OtrosIngresos { get; set; }
+        public virtual DbSet<Clientes> Clientes { get; set; }
+        public virtual DbSet<Proveedores> Proveedores { get; set; }
+        public virtual DbSet<CondicionesPagos> CondicionesPagos { get; set; }
+        public virtual DbSet<Barrios> Barrios { get; set; }
+        public virtual DbSet<Cantones> Cantones { get; set; }
+        public virtual DbSet<Distritos> Distritos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
