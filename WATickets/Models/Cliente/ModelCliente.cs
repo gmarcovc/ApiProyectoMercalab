@@ -36,6 +36,10 @@ namespace WATickets.Models.Cliente
         public virtual DbSet<Barrios> Barrios { get; set; }
         public virtual DbSet<Cantones> Cantones { get; set; }
         public virtual DbSet<Distritos> Distritos { get; set; }
+        public virtual DbSet<EncOrdenes> EncOrdenes { get; set; }
+        public virtual DbSet<DetOrdenes> DetOrdenes { get; set; }
+        public virtual DbSet<Productos> Productos { get; set; }
+        public virtual DbSet<Bodegas> Bodegas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
