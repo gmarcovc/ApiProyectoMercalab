@@ -40,6 +40,9 @@ namespace WATickets.Models.Cliente
         public virtual DbSet<DetOrdenes> DetOrdenes { get; set; }
         public virtual DbSet<Productos> Productos { get; set; }
         public virtual DbSet<Bodegas> Bodegas { get; set; }
+        public virtual DbSet<EncDocumento> EncDocumento { get; set; }
+        public virtual DbSet<DetDocumento> DetDocumento { get; set; }
+        public virtual DbSet<Rutas> Rutas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
