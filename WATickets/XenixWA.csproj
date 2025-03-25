@@ -254,6 +254,7 @@
     </Compile>
     <Compile Include="Models\APIS\ReporteClientes.cs" />
     <Compile Include="Models\APIS\ReporteStocks.cs" />
+    <Compile Include="Models\APIS\ReporteVentas.cs" />
     <Compile Include="Models\Cliente\BitacoraErrores.cs" />
     <Compile Include="Models\Cliente\Clientes.cs" />
     <Compile Include="Models\Cliente\Horarios.cs" />
