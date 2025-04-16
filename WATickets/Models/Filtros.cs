@@ -26,10 +26,5 @@ namespace WATickets.Models
         public bool Externo { get; set; }
         public bool Activo { get; set; }
         public bool novapos { get; set; }
-        public bool pendientes { get; set; }
-        public bool rechazados { get; set; }
-        public bool aprobados { get; set; }
-        public bool parciales { get; set; }
-        public bool completos { get; set; }
     }
 }
