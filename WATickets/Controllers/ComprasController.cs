@@ -168,7 +168,8 @@ namespace WATickets.Controllers
                         det.Cantidad = item.Cantidad;
                         det.Descuento = item.Descuento;
                         det.TotalLinea = item.TotalLinea;
-
+                        det.CantidadFaltante = item.Cantidad;
+                        det.CantidadRecibidoAE = 0;
                         db.DetCompras.Add(det);
                         db.SaveChanges();
                         i++;
@@ -378,15 +379,15 @@ namespace WATickets.Controllers
                         var Det = Detalles.Where(a => a.id == detalle.id).FirstOrDefault();
                         db.Entry(Det).State = EntityState.Modified;
                         Det.CantidadRecibidoAE += detalle.CantidadRecibidoAE;
-                        Det.CantidadFaltante = detalle.Cantidad - detalle.CantidadRecibidoAE;
-
+                        Det.CantidadFaltante = detalle.Cantidad - Det.CantidadRecibidoAE;
                         db.SaveChanges();
                         var Producto = db.Productos.Where(a => a.id == Det.idProducto).FirstOrDefault();
                         if(Producto != null)
                         {
                             db.Entry(Producto).State = EntityState.Modified;
-                            Producto.Stock += Det.CantidadRecibidoAE;
+                            Producto.Stock += detalle.CantidadRecibidoAE;
                             db.SaveChanges();
+
                         }
                     }
 
